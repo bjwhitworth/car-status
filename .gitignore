@@ -1,7 +1,4 @@
-# Create .gitignore
-cat > .gitignore << 'EOF'
 # Xcode
-*.xcodeproj
 *.xcodeproj/xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata/
 *.xcworkspace/xcuserdata/
@@ -39,12 +36,3 @@ Package.resolved
 
 # Archives
 *.xcarchive
-
-# Photos
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.tiff
-*.bmp
-*.heic
