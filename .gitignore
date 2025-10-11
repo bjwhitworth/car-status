@@ -36,3 +36,8 @@ Package.resolved
 
 # Archives
 *.xcarchive
+
+# IDE settings
+*.code-workspace
+.vscode/
+.idea/
