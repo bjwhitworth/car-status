@@ -34,7 +34,7 @@ The app runs as a menu bar utility showing your vehicle's current status at a gl
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/car-status.git
+git clone https://github.com/bjwhitworth/car-status.git
 cd car-status
 
 # Set up the development environment
