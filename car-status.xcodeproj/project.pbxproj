@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA77894D2B3A1F9200698662 /* car_statusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77894C2B3A1F9200698662 /* car_statusApp.swift */; };
 		BA77894F2B3A1F9200698662 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77894E2B3A1F9200698662 /* ContentView.swift */; };
 		BA7789512B3A1F9300698662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7789502B3A1F9300698662 /* Assets.xcassets */; };
 		BA7789542B3A1F9300698662 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7789532B3A1F9300698662 /* Preview Assets.xcassets */; };
 		BA77895F2B3A1F9300698662 /* car_statusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77895E2B3A1F9300698662 /* car_statusTests.swift */; };
 		BA7789692B3A1F9400698662 /* car_statusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7789682B3A1F9400698662 /* car_statusUITests.swift */; };
 		BA77896B2B3A1F9400698662 /* car_statusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77896A2B3A1F9400698662 /* car_statusUITestsLaunchTests.swift */; };
+		BA7789792B3A3DEB00698662 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA7789782B3A3DEB00698662 /* WebKit.framework */; };
+		BA77FFC42E24178300BD1F93 /* VehicleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77FFC02E24178300BD1F93 /* VehicleRepository.swift */; };
+		BA77FFC52E24178300BD1F93 /* VehicleEnquiryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77FFB92E24178300BD1F93 /* VehicleEnquiryError.swift */; };
+		BA77FFC62E24178300BD1F93 /* VehicleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77FFBA2E24178300BD1F93 /* VehicleStatus.swift */; };
+		BA77FFC72E24178300BD1F93 /* VehicleEnquiryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77FFBF2E24178300BD1F93 /* VehicleEnquiryService.swift */; };
+		BA77FFC82E24178300BD1F93 /* VehicleStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77FFC22E24178300BD1F93 /* VehicleStatusViewModel.swift */; };
+		BA77FFC92E24178300BD1F93 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77FFBE2E24178300BD1F93 /* NetworkMonitor.swift */; };
+		BA77FFCA2E24178300BD1F93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA77FFBC2E24178300BD1F93 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		BA7789492B3A1F9200698662 /* car-status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "car-status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA77894C2B3A1F9200698662 /* car_statusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_statusApp.swift; sourceTree = "<group>"; };
 		BA77894E2B3A1F9200698662 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA7789502B3A1F9300698662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA7789532B3A1F9300698662 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +51,15 @@
 		BA7789642B3A1F9300698662 /* car-statusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "car-statusUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7789682B3A1F9400698662 /* car_statusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_statusUITests.swift; sourceTree = "<group>"; };
 		BA77896A2B3A1F9400698662 /* car_statusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_statusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA7789782B3A3DEB00698662 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BA77FFB92E24178300BD1F93 /* VehicleEnquiryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleEnquiryError.swift; sourceTree = "<group>"; };
+		BA77FFBA2E24178300BD1F93 /* VehicleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleStatus.swift; sourceTree = "<group>"; };
+		BA77FFBC2E24178300BD1F93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA77FFBE2E24178300BD1F93 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		BA77FFBF2E24178300BD1F93 /* VehicleEnquiryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleEnquiryService.swift; sourceTree = "<group>"; };
+		BA77FFC02E24178300BD1F93 /* VehicleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRepository.swift; sourceTree = "<group>"; };
+		BA77FFC22E24178300BD1F93 /* VehicleStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleStatusViewModel.swift; sourceTree = "<group>"; };
+		BAA15A0B2B3B9384002C4A92 /* car-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "car-icon.png"; path = "car-status/car-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7789792B3A3DEB00698662 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,10 +91,12 @@
 		BA7789402B3A1F9200698662 = {
 			isa = PBXGroup;
 			children = (
+				BAA15A0B2B3B9384002C4A92 /* car-icon.png */,
 				BA77894B2B3A1F9200698662 /* car-status */,
 				BA77895D2B3A1F9300698662 /* car-statusTests */,
 				BA7789672B3A1F9400698662 /* car-statusUITests */,
 				BA77894A2B3A1F9200698662 /* Products */,
+				BA7789772B3A3DEB00698662 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +113,10 @@
 		BA77894B2B3A1F9200698662 /* car-status */ = {
 			isa = PBXGroup;
 			children = (
-				BA77894C2B3A1F9200698662 /* car_statusApp.swift */,
+				BA77FFBB2E24178300BD1F93 /* Models */,
+				BA77FFBD2E24178300BD1F93 /* Preview Content */,
+				BA77FFC12E24178300BD1F93 /* Services */,
+				BA77FFC32E24178300BD1F93 /* ViewModels */,
 				BA77894E2B3A1F9200698662 /* ContentView.swift */,
 				BA7789502B3A1F9300698662 /* Assets.xcassets */,
 				BA7789552B3A1F9300698662 /* car_status.entitlements */,
@@ -127,6 +148,49 @@
 				BA77896A2B3A1F9400698662 /* car_statusUITestsLaunchTests.swift */,
 			);
 			path = "car-statusUITests";
+			sourceTree = "<group>";
+		};
+		BA7789772B3A3DEB00698662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA7789782B3A3DEB00698662 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA77FFBB2E24178300BD1F93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA77FFB92E24178300BD1F93 /* VehicleEnquiryError.swift */,
+				BA77FFBA2E24178300BD1F93 /* VehicleStatus.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA77FFBD2E24178300BD1F93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA77FFBC2E24178300BD1F93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA77FFC12E24178300BD1F93 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA77FFBE2E24178300BD1F93 /* NetworkMonitor.swift */,
+				BA77FFBF2E24178300BD1F93 /* VehicleEnquiryService.swift */,
+				BA77FFC02E24178300BD1F93 /* VehicleRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA77FFC32E24178300BD1F93 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA77FFC22E24178300BD1F93 /* VehicleStatusViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7789542B3A1F9300698662 /* Preview Assets.xcassets in Resources */,
+				BA77FFCA2E24178300BD1F93 /* Preview Assets.xcassets in Resources */,
 				BA7789512B3A1F9300698662 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +325,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA77894F2B3A1F9200698662 /* ContentView.swift in Sources */,
-				BA77894D2B3A1F9200698662 /* car_statusApp.swift in Sources */,
+				BA77FFC42E24178300BD1F93 /* VehicleRepository.swift in Sources */,
+				BA77FFC52E24178300BD1F93 /* VehicleEnquiryError.swift in Sources */,
+				BA77FFC62E24178300BD1F93 /* VehicleStatus.swift in Sources */,
+				BA77FFC72E24178300BD1F93 /* VehicleEnquiryService.swift in Sources */,
+				BA77FFC82E24178300BD1F93 /* VehicleStatusViewModel.swift in Sources */,
+				BA77FFC92E24178300BD1F93 /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +490,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "car-status/car_status.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"car-status/Preview Content\"";
+				DEVELOPMENT_TEAM = 8RRN8YZ59W;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -445,11 +519,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "car-status/car_status.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"car-status/Preview Content\"";
+				DEVELOPMENT_TEAM = 8RRN8YZ59W;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

@@ -1,0 +1,40 @@
+# Create .gitignore
+cat > .gitignore << 'EOF'
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.xccheckout
+*.moved-aside
+
+# Build artifacts
+build/
+LocalBuild/
+.build/
+*.app/
+*.dSYM.zip
+*.dSYM
+
+# SPM
+.swiftpm/
+Package.resolved
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.swp
+*.bak
+*~
+
+# User-specific files
+*.perspectivev3
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Archives
+*.xcarchive
