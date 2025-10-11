@@ -1,10 +1,8 @@
 # CarStatus
 
+A macOS menu bar application for checking UK vehicle tax and MOT status in real-time.  If you're anything like me, you'll forget to check your vehicle's tax and MOT status until the last minute even if you store it in a calendar with reminders.  I need something glaring at me in the menu bar every day until I sort it out! I'm not a front-end SWE by trade (as I'm sure you can tell!), but I wanted to try building a simple app in a language new to me with help from various LLMs.  The rest of this README is largely auto-generated with some manual edits.
+
 ![Car Status](docs/img/car-status-image.png)
-
-A macOS menu bar application for checking UK vehicle tax and MOT status in real-time.  If you're anything like me, you'll forget to check your vehicle's tax and MOT status until the last minute even if you store it in a calendar with reminders.  I need something glaring at me in the menu bar every day until I sort it out!
-
-I'm not a front-end SWE by trade (as I'm sure you can tell!), but I wanted to try building a simple app in a language new to me with help from various LLMs.  The rest of this README is largely auto-generated from prompts to ChatGPT and GitHub Copilot, with some manual edits.
 
 ![macOS](https://img.shields.io/badge/macOS-12.0+-blue)
 ![Swift](https://img.shields.io/badge/Swift-5.8+-orange)
