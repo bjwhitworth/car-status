@@ -124,11 +124,23 @@ CarStatus/
 │   ├── Assets.xcassets/        # App icons & resources
 │   ├── Info.plist              # App configuration
 │   └── car_status.entitlements # Security permissions
+├── car-statusTests/            # Unit testing
+│   └── car_statusTests.swift   # Validation logic tests
 ├── scripts/
 │   ├── setup.sh                # Development setup
 │   └── build-local-app.sh      # Build script
 └── README.md                   # This file
 ```
+
+### Testing
+
+Because the core app relies on an unpredictable headless web scraper connected to the live DVLA website, comprehensive integration testing is notoriously difficult and brittle. Instead, testing is focused tightly on data validation and string parsing formats using native `XCTest`. 
+
+To run the unit tests:
+1. Open `car-status.xcodeproj` in Xcode.
+2. Press `⌘U` (Product > Test).
+
+*(Note: If the `car-statusTests` target is missing from your project sidebar, you can re-attach it by clicking `File` -> `New` -> `Target` -> `Unit Testing Bundle`, and including the tests file.)*
 
 ## Technical Details
 

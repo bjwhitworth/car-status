@@ -11,6 +11,13 @@ echo "🧹 Cleaning previous builds..."
 rm -rf ./LocalBuild
 rm -rf /Applications/car-status.app
 
+# Run Tests First
+echo "🧪 Running Tests..."
+if ! xcodebuild -project car-status.xcodeproj -scheme car-status test; then
+    echo "❌ Tests failed! Aborting build."
+    exit 1
+fi
+
 # Build release version directly (no archiving)
 echo "🔨 Building app..."
 xcodebuild \

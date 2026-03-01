@@ -210,7 +210,7 @@ final class VehicleEnquiryService: NSObject, VehicleEnquiryServiceProtocol, WKNa
         currentSubject = nil
     }
     
-    private func isValidUKRegistration(_ registration: String) -> Bool {
+    func isValidUKRegistration(_ registration: String) -> Bool {
         let cleaned = registration.replacingOccurrences(of: " ", with: "").uppercased()
         
         // Basic UK registration patterns
