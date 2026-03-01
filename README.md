@@ -1,6 +1,6 @@
 # CarStatus
 
-A macOS menu bar application for checking UK vehicle tax and MOT status in real-time.  If you're anything like me, you'll forget to check your vehicle's tax and MOT status until the last minute even if you store it in a calendar with reminders.  I need something glaring at me in the menu bar every day until I sort it out! I'm not a front-end SWE by trade (as I'm sure you can tell!), but I wanted to try building a simple app in a language new to me with help from various LLMs.  The rest of this README is largely auto-generated with some manual edits.
+A macOS menu bar application for checking UK vehicle tax and MOT status in real-time.  Building a simple app in a language new to me with help from various LLMs.  The rest of this README is largely auto-generated with some manual edits.
 
 ![Car Status](docs/img/car-status-image.png)
 
@@ -134,10 +134,11 @@ CarStatus/
 
 ### WebKit Integration
 
-The app uses WebKit to interact with the official UK government vehicle enquiry service:
+The app uses a lightweight, headless `WKWebView` to interact with the official UK government vehicle enquiry service. It is tuned for performance:
 - Automated form submission
-- JavaScript-based page interaction
+- Headless JavaScript-based page interaction
 - Response parsing and data extraction
+- Media (images/video) actively suppressed to save memory
 - Retry logic and timeout handling
 
 ### Data Persistence
@@ -155,18 +156,10 @@ The app uses WebKit to interact with the official UK government vehicle enquiry 
 
 ### Security & Privacy
 
-- **No data collection** - All data stays on your device
-- **Direct government access** - No third-party services
-- **Hardened Runtime** enabled for security
-- **Sandboxed** with minimal permissions
-
-## Permissions Required
-
-The app requires these macOS permissions:
-- **Network Access** - To check vehicle status on gov.uk
-- **Hardened Runtime** - For security compliance
-
-No personal data is collected or transmitted beyond what's necessary to query the government service.
+- **No data collection** - All data stays directly on your local device (`UserDefaults`).
+- **Direct government access** - No intermediate third-party services.
+- **Strictly Sandboxed** - Hardened runtime is enabled and the app is heavily sandboxed. It opts out of all unnecessary permissions (no file system access, no JIT, no unsigned memory allocation). Outbound network access (`network.client`) is the _only_ sandbox exception requested.
+- **Optimised Scraper** - The headless `WKWebView` scraper suppresses media loading and unused features to keep memory usage low and reduce attack surfaces.
 
 ## Troubleshooting
 
