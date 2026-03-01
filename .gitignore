@@ -41,3 +41,6 @@ Package.resolved
 *.code-workspace
 .vscode/
 .idea/
+
+# Image files
+*/Assets.xcassets/*.png

@@ -30,11 +30,13 @@ final class VehicleEnquiryService: NSObject, VehicleEnquiryServiceProtocol, WKNa
         let configuration = WKWebViewConfiguration()
         configuration.websiteDataStore = WKWebsiteDataStore.nonPersistent()
         
-        // Configure for better reliability
+        // Configure for better reliability and performance
         configuration.processPool = WKProcessPool()
+        configuration.allowsAirPlayForMediaPlayback = false
+        configuration.mediaTypesRequiringUserActionForPlayback = .all
         
-        // Remove deprecated javaScriptEnabled setting
-        // JavaScript will be enabled by default and we'll control it per-navigation if needed
+        // Suppress image/media loading via preferences where possible
+        configuration.preferences.setValue(true, forKey: "developerExtrasEnabled")
         configuration.preferences.javaScriptCanOpenWindowsAutomatically = false
         
         webView = WKWebView(frame: .zero, configuration: configuration)

@@ -147,15 +147,3 @@ struct MyApp: App {
         }
     }
 }
-
-// Legacy WebView wrapper - kept for reference but no longer used
-struct WebView: NSViewRepresentable {
-    let webView: WKWebView
-    let completionHandler: (String) -> Void
-
-    func makeNSView(context: Context) -> WKWebView {
-        return webView
-    }
-
-    func updateNSView(_ nsView: WKWebView, context: Context) {}
-}
