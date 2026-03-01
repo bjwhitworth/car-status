@@ -3,26 +3,6 @@
 
 echo "🚀 Building CarStatus for personal use..."
 
-# Check if Xcode is properly set up
-echo "🔧 Checking Xcode setup..."
-if ! xcode-select -p | grep -q "Xcode.app"; then
-    echo "⚠️  Setting Xcode as active developer directory..."
-    
-    # Try to find Xcode in common locations
-    if [ -d "/Applications/Xcode.app" ]; then
-        sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
-        echo "✅ Set Xcode path to /Applications/Xcode.app"
-    elif [ -d "/Applications/Xcode-beta.app" ]; then
-        sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer
-        echo "✅ Set Xcode path to /Applications/Xcode-beta.app"
-    else
-        echo "❌ Xcode not found in /Applications/"
-        echo "💡 Please install Xcode from the App Store or run:"
-        echo "   sudo xcode-select -s /path/to/your/Xcode.app/Contents/Developer"
-        exit 1
-    fi
-fi
-
 PROJECT_DIR="/Users/benjaminwhitworth/Projects/car-status"
 cd "$PROJECT_DIR"
 
