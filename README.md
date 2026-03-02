@@ -134,7 +134,7 @@ CarStatus/
 
 ### Testing
 
-Because the core app relies on an unpredictable headless web scraper connected to the live DVLA website, comprehensive integration testing is notoriously difficult and brittle. Instead, testing is focused tightly on data validation and string parsing formats using native `XCTest`. 
+Because the core app relies on an unpredictable headless web scraper connected to the live DVLA website, and this app is just for personal use and learning, comprehensive integration testing is notoriously difficult and brittle. Instead, testing is focused tightly on data validation and string parsing formats using native `XCTest`. 
 
 To run the unit tests:
 1. Open `car-status.xcodeproj` in Xcode.
